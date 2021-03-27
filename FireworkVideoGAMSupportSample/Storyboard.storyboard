@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Embed-->
+        <scene sceneID="F8g-Cu-ocG">
+            <objects>
+                <viewController storyboardIdentifier="GridVideoFeedViewController" id="p1Y-QH-IDv" customClass="GridVideoFeedViewContainerController" customModule="FireworkVideoGAMSupportSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oaA-0e-5pO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IKN-d7-BBj">
+                                <rect key="frame" x="0.0" y="44" width="414" height="280"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="j1L-Kx-3x6"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jSJ-PM-jsX">
+                                <rect key="frame" x="0.0" y="332" width="414" height="220"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="IiZ-Bk-KEb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cyA-bm-Qjr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IKN-d7-BBj" firstAttribute="top" secondItem="cyA-bm-Qjr" secondAttribute="top" id="2Fc-2G-7y2"/>
+                            <constraint firstItem="jSJ-PM-jsX" firstAttribute="top" secondItem="IKN-d7-BBj" secondAttribute="bottom" constant="8" symbolic="YES" id="Exd-6a-QtD"/>
+                            <constraint firstItem="IKN-d7-BBj" firstAttribute="leading" secondItem="cyA-bm-Qjr" secondAttribute="leading" id="NXb-PT-ma5"/>
+                            <constraint firstItem="IKN-d7-BBj" firstAttribute="trailing" secondItem="cyA-bm-Qjr" secondAttribute="trailing" id="Uxv-yD-nJG"/>
+                            <constraint firstItem="jSJ-PM-jsX" firstAttribute="trailing" secondItem="cyA-bm-Qjr" secondAttribute="trailing" id="eAQ-76-vqt"/>
+                            <constraint firstItem="jSJ-PM-jsX" firstAttribute="leading" secondItem="cyA-bm-Qjr" secondAttribute="leading" id="fgX-wj-yh9"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Embed" image="rectangle.split.3x1" catalog="system" selectedImage="rectangle.split.3x1.fill" id="DHi-Xg-7pP"/>
+                    <connections>
+                        <outlet property="channelFeed" destination="jSJ-PM-jsX" id="AVD-Ti-H4l"/>
+                        <outlet property="videoFeed" destination="IKN-d7-BBj" id="NF6-nA-3fm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="knd-qm-HVb" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="rectangle.split.3x1" catalog="system" width="128" height="93"/>
+        <image name="rectangle.split.3x1.fill" catalog="system" width="128" height="93"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
