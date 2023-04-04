@@ -11,3 +11,5 @@ local-dependencies/
 .swiftpm/
 
 /IDEWorkspaceChecks.plist
+
+Package.resolved
